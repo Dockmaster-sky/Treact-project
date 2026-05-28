@@ -8,22 +8,30 @@
     color: #243e63;
 }
 
+.no__click {
+    cursor: not-allowed;
+}
 
-
+.container {
+    padding: 96px 0;
+}
 
 .row {
     width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
     display: inline;
-    transition: all 300ms;
+    
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline 2px solid rgb(99, 21, 255);
+    
+    
 }
 
 ul {
@@ -31,12 +39,12 @@ ul {
 }
 
 .purple__text {
-    color:rgb(99, 21, 255)
+    color:rgb(99, 21, 255);
 }
 
-.container {
-    padding: 96px 0;
-}
+
+
+
 
 /* 
 
@@ -44,16 +52,14 @@ NAV BAR
 
 */
 
-#landing {
-    margin-top: 32px;
-}
+
+
 
 nav {
-    margin: 40px;
-    justify-content: center;
+    padding-top: 32px;
     display: flex;
-    align-items: center;
-    width: 100%;
+    
+  
 }
 
 .nav__container {
@@ -66,14 +72,18 @@ nav {
 }
 
 .nav__row {
-    margin: 10px 32px;
+    display: flex;
     justify-content: space-between;
+
 }
 
 .nav__logo {
     color: rgb(36, 62, 99);
     font-size: 24px;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__logo--purple {
@@ -97,7 +107,7 @@ nav {
     font-weight: 600;
     letter-spacing: 0.35px;
     position: relative;
-    margin: 0 12px;
+    margin: 0 24px;
 }
 
 
@@ -112,14 +122,15 @@ nav {
     padding: 10px 30px;
     border-radius: 50px;
     color: #ffff;
-    
-    
     white-space: nowrap;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.35px;
-  
     margin: 0 12px;
+}
+
+.sign-up__button:hover {
+    background-color: rgb(87, 20, 221);
 }
 
 
@@ -155,10 +166,12 @@ HEADER
     width: 40%;
 }
 
-.header__h1 {
+.section__title {
     font-size: 48px;
     color: #1a202c;
     line-height: 1.25;
+    padding-top: 25px;
+    margin: 16px 0;
 }
 
 .header__para {
@@ -233,4 +246,25 @@ input:hover {
     margin-top: 16px;
     opacity: 0.5;
 
+}
+
+/* 
+
+FEATUERS
+
+*/
+
+.features__row {
+    text-align: center;
+
+}
+
+.section__title--two {
+    color: #243e63;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+}
+
+.features__section--tag {
+    letter-spacing: 1.6px;
 }
